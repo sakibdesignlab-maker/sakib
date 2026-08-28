@@ -1,0 +1,94 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+locale: "en"
+
+collections:
+  - name: "categories"
+    label: "ক্যাটাগরি (সেকশন)"
+    files:
+      - file: "content/categories.json"
+        label: "সব ক্যাটাগরির তালিকা"
+        name: "categories"
+        fields:
+          - label: "ক্যাটাগরিসমূহ"
+            name: "items"
+            widget: "list"
+            summary: "{{label}}"
+            fields:
+              - label: "আইডি (শুধু ইংরেজি ছোট হাতের অক্ষর, স্পেস ছাড়া, দুই শব্দের মাঝে - দিন)"
+                name: "id"
+                widget: "string"
+                hint: "যেমন: photo-editing, illustration, packaging-design। এই আইডিটাই নিচের 'পোর্টফোলিও কাজ' এ ক্যাটাগরি বাছাই করার সময় লাগবে, তাই সহজ ও একবার ঠিক করলে না বদলানোই ভালো।"
+              - label: "নাম (বাংলা)"
+                name: "label"
+                widget: "string"
+              - label: "Name (English)"
+                name: "label_en"
+                widget: "string"
+                required: false
+
+  - name: "settings"
+    label: "সাইট তথ্য"
+    files:
+      - file: "content/settings.json"
+        label: "নাম, ছবি ও কন্টাক্ট"
+        name: "settings"
+        fields:
+          - { label: "নাম / ব্র্যান্ড নাম (বাংলা)", name: "name", widget: "string" }
+          - { label: "Name / Brand Name (English)", name: "name_en", widget: "string", required: false }
+          - { label: "ট্যাগলাইন (বাংলা)", name: "tagline", widget: "string" }
+          - { label: "Tagline (English)", name: "tagline_en", widget: "string", required: false }
+          - { label: "নিজের সম্পর্কে বিবরণ (বাংলা)", name: "bio", widget: "text" }
+          - { label: "About / Bio (English)", name: "bio_en", widget: "text", required: false }
+          - { label: "প্রোফাইল ছবি", name: "profileImage", widget: "image" }
+          - label: "লোগো (নেভবার ও লোডিং স্ক্রিনে দেখাবে)"
+            name: "logo"
+            widget: "image"
+            required: false
+          - label: "ফেভিকন (ব্রাউজার ট্যাবের ছোট আইকন)"
+            name: "favicon"
+            widget: "image"
+            required: false
+            hint: "চৌকো আকৃতির সহজ ছবি দিন (যেমন লোগো), ছোট সাইজে দেখাবে তাই বেশি ডিটেইল না রাখাই ভালো।"
+          - { label: "ফোন নাম্বার (দেখানোর জন্য)", name: "phone", widget: "string" }
+          - { label: "ইমেইল", name: "email", widget: "string" }
+          - { label: "লোকেশন", name: "location", widget: "string" }
+          - label: "WhatsApp নাম্বার"
+            name: "whatsappNumber"
+            widget: "string"
+            hint: "দেশের কোড সহ, + বা শুরুর ০ ছাড়া। যেমন: 8801712345678"
+          - { label: "WhatsApp ডিফল্ট মেসেজ (বাংলা)", name: "whatsappMessage", widget: "string" }
+          - { label: "WhatsApp Default Message (English)", name: "whatsappMessage_en", widget: "string", required: false }
+          - { label: "কত বছরের অভিজ্ঞতা (বাংলা)", name: "yearsExperience", widget: "string" }
+          - { label: "Years of Experience (English)", name: "yearsExperience_en", widget: "string", required: false }
+          - { label: "মোট প্রজেক্ট সংখ্যা (বাংলা)", name: "projectsDone", widget: "string" }
+          - { label: "Completed Projects (English)", name: "projectsDone_en", widget: "string", required: false }
+          - { label: "সন্তুষ্ট ক্লায়েন্ট সংখ্যা (বাংলা)", name: "happyClients", widget: "string" }
+          - { label: "Happy Clients (English)", name: "happyClients_en", widget: "string", required: false }
+
+  - name: "portfolio"
+    label: "পোর্টফোলিও কাজ"
+    files:
+      - file: "content/portfolio.json"
+        label: "সব কাজের তালিকা"
+        name: "portfolio"
+        fields:
+          - label: "কাজসমূহ"
+            name: "items"
+            widget: "list"
+            summary: "{{title}} ({{category}})"
+            fields:
+              - { label: "শিরোনাম (বাংলা)", name: "title", widget: "string" }
+              - { label: "Title (English)", name: "title_en", widget: "string", required: false }
+              - label: "ক্যাটাগরি আইডি"
+                name: "category"
+                widget: "string"
+                hint: "উপরে 'ক্যাটাগরি (সেকশন)' এ যেই আইডি দিয়েছেন হুবহু সেটাই এখানে লিখুন (ছোট হাতের ইংরেজি, স্পেস ছাড়া)। যেমন: logo-design"
+              - { label: "ছবি", name: "image", widget: "image" }
+              - { label: "বিবরণ (বাংলা, ঐচ্ছিক)", name: "description", widget: "text", required: false }
+              - { label: "Description (English, optional)", name: "description_en", widget: "text", required: false }

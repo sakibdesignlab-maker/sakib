@@ -1,0 +1,23 @@
+{
+  "name": "আপনার নাম / ব্র্যান্ড নাম",
+  "tagline": "লোগো, ব্যানার, সোশ্যাল মিডিয়া ও ভেক্টর ডিজাইন — এক জায়গায়",
+  "bio": "আমি একজন ফ্রিলান্স গ্রাফিক ডিজাইনার। বিভিন্ন ব্র্যান্ডের জন্য লোগো, ব্যানার, সোশ্যাল মিডিয়া কনটেন্ট আর ভেক্টর আর্ট তৈরি করি। নিচে আমার কাজের ধরন অনুযায়ী ক্যাটাগরি দেওয়া আছে।",
+  "profileImage": "/images/uploads/profile-placeholder.svg",
+  "favicon": "/favicon.svg",
+  "logo": "/favicon.svg",
+  "phone": "+8801XXXXXXXXX",
+  "email": "youremail@example.com",
+  "location": "ঢাকা, বাংলাদেশ",
+  "whatsappNumber": "8801XXXXXXXXX",
+  "whatsappMessage": "হাই, আমি আপনার পোর্টফোলিও দেখলাম। একটা কাজ নিয়ে কথা বলতে চাই।",
+  "yearsExperience": "৩+",
+  "projectsDone": "৮০+",
+  "happyClients": "৫০+",
+  "name_en": "Your Name / Brand Name",
+  "tagline_en": "Logo, banner, social media and vector design — all in one place",
+  "bio_en": "I am a freelance graphic designer creating logos, banners, social media content and vector artwork for different brands. Add your English bio here from the admin panel.",
+  "whatsappMessage_en": "Hi, I saw your portfolio and would like to discuss a project.",
+  "yearsExperience_en": "3+",
+  "projectsDone_en": "80+",
+  "happyClients_en": "50+"
+}

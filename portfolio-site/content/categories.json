@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "id": "logo-design",
+      "label": "লোগো ডিজাইন",
+      "label_en": "Logo Design"
+    },
+    {
+      "id": "banner-design",
+      "label": "ব্যানার ডিজাইন",
+      "label_en": "Banner Design"
+    },
+    {
+      "id": "social-media-design",
+      "label": "সোশ্যাল মিডিয়া ডিজাইন",
+      "label_en": "Social Media Design"
+    },
+    {
+      "id": "vector-drawing",
+      "label": "ভেক্টর ড্রয়িং",
+      "label_en": "Vector Drawing"
+    }
+  ]
+}
