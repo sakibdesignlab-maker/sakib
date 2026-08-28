@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: main
 
-media_folder: "images/uploads"
+media_folder: "portfolio-site/images/uploads"
 public_folder: "/images/uploads"
 
 locale: "en"
@@ -11,7 +11,7 @@ collections:
   - name: "categories"
     label: "ক্যাটাগরি (সেকশন)"
     files:
-      - file: "content/categories.json"
+      - file: "portfolio-site/content/categories.json"
         label: "সব ক্যাটাগরির তালিকা"
         name: "categories"
         fields:
@@ -35,7 +35,7 @@ collections:
   - name: "settings"
     label: "সাইট তথ্য"
     files:
-      - file: "content/settings.json"
+      - file: "portfolio-site/content/settings.json"
         label: "নাম, ছবি ও কন্টাক্ট"
         name: "settings"
         fields:
@@ -74,7 +74,7 @@ collections:
   - name: "portfolio"
     label: "পোর্টফোলিও কাজ"
     files:
-      - file: "content/portfolio.json"
+      - file: "portfolio-site/content/portfolio.json"
         label: "সব কাজের তালিকা"
         name: "portfolio"
         fields:
