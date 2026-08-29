@@ -53,8 +53,8 @@ const TRANSLATIONS = {
   }
 };
 
-let currentLang = localStorage.getItem("portfolio-language") || "bn";
-if (!TRANSLATIONS[currentLang]) currentLang = "bn";
+let currentLang = localStorage.getItem("portfolio-language") || "en";
+if (!TRANSLATIONS[currentLang]) currentLang = "en";
 
 async function loadSettings() {
   try {
